@@ -31,7 +31,7 @@ def is_valid_email(email):
     '@gmil', '@gmal', '@yahhoo', '@yahool', '@yahoocom', '@ymail', '@yimail',
     '@noposee', '@notiene', '@notiene2', '@gmsil', '@yayoo', '@gemail', 
     '@gamail', '@test.com', '@iclod.com', '@gmaail', '@gnail', '@email', 
-    '@gmali', '@igmail', '@gmaim', '@gmailc', 'noposee', 'notiene', 'notiene2',
+    '@gmali', '@igmail', '@gmaim', '@gmailc'
     ]
 
     invalid_domains = [
@@ -134,4 +134,8 @@ def download_file(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename, as_attachment=True)
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    # Obtener el puerto desde la variable de entorno que Render configura
+    port = int(os.environ.get('PORT', 5000))
+    
+    # Cambiar la dirección a 0.0.0.0 para que escuche en todas las interfaces
+    app.run(host='0.0.0.0', port=port, debug=False)

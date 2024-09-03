@@ -1,0 +1,123 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #7D799D;
+    background: radial-gradient(at center, #193BE1, #193BE1);
+    margin: 0;
+    letter-spacing: 0px;
+    color: #ffff;
+}
+
+.container {
+    text-align: center;
+    background-image: linear-gradient(to bottom, #141414 40%, #0e0e0e 100%);
+    padding: 20px;         
+    border-radius: 20px;
+}
+
+h1 {
+    color: #ffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2.2em;
+    padding-bottom: 1em;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.casillas {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.casillas .form-check {
+    margin-left: 1em;
+    margin-right: 1em;
+    color: #ffff;
+}
+
+input[type="file"], input[type="submit"], .form-check #selector {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #2d2d2d;
+    border-radius: 7px;
+    width: 100%;
+    color: #fff;
+}
+
+input[type="submit"] {
+    background-color: #3A4FCA;
+    color: #fff;
+    border: solid 0px;
+    border-color: #0828c9;
+    cursor: pointer;
+    width: 20%;
+    border-radius: 30px;
+    margin: 1em;
+    font-weight: 600;
+}
+
+input[type="submit"]:hover {
+    background-color: #4f67dd;
+    border: 0px solid #ffffff;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.boton-primary {
+    background-color: #3A4FCA;
+    color: #fff;
+    border: solid 0px;
+    border-color: #0828c9;
+    
+    width: 15%;
+    border-radius: 20px;
+    padding: 0.5em;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.boton-primary:hover {
+    background-color: #4f67dd;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.btn-secondary {
+    margin: 10px;
+}

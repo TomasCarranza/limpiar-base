@@ -12,6 +12,6 @@ REM Install required packages
 pip install flask pandas openpyxl
 
 REM Run the Flask app
-python app.py
+python main.py
 
 pause

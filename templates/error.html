@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limpieza de Base de Datos</title>
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Limpieza de bases</h1>
+        <p>Cargar archivo .XLSX con columnas “Nombre” y “Email”</p>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" id="selector"/>
+            <br>
+            <br><p>Seleccionar columnas a filtrar</p>
+            <div class="casillas">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="columnas" value="nombre" id="nombre">
+                    <label class="form-check-label" for="nombre">Nombre</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="columnas" value="email" id="email">
+                    <label class="form-check-label" for="email">Email</label>
+                </div>
+            </div>
+            <input type="submit" value="Limpiar base" />
+        </form>
+        {% if error_message %}
+        <p class="error-message">{{ error_message }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

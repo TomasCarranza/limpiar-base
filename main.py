@@ -20,13 +20,13 @@ def is_valid_email(email):
     invalid_emails = [
     'abuse@', 'admin@', 'avidandlb@', 'billing@', 'compliance@', 'devnull@',
     'dns@', 'ftp@', 'hostmaster@', 'inoc@', 'ispfeedback@', 'ispsupport@',
-    'list@', 'list-request@', 'maildaemon@', 'noc@', 'noreplyno-reply@',
+    'list@', 'list-request@', 'maildaemon@', 'noreplyno-reply@',
     'null@', 'phish@', 'phishing@', 'popmaster@', 'postmaster@', 'privacy@',
     'registrar@', 'root@', 'security@', 'soporte@', 'spam@', 'support@',
     'sysadmin@', 'tech@', 'undisclosed-recipients@', 'unsubscribe@',
     'usenet@', 'uucp@', 'webmaster@', 'webmasters@',
-    '@gmial', '@hotmial', '@hotmaill', '@noregistra', 
-    '@hormail', '@gamail', '@gamil', '@gimail', '@outlooki', '@ooutlook', 
+    '@gmial', '@hotmial', '@noregistra', 
+    '@hormail', '@gamail', '@gamil', '@gimail', '@ooutlook', 
     '@yohoo', '@oitlook', '@gogglemail', '@gogolemail', '@outlooi', '@gmaio', 
     '@gmil', '@gmal', '@yahhoo', '@yahool', '@yahoocom', '@ymail', '@yimail',
     '@noposee', '@notiene', '@notiene2', '@gmsil', '@yayoo', '@gemail', 
@@ -37,7 +37,7 @@ def is_valid_email(email):
     invalid_domains = [
     '.de', '.fr', '.it', '.au', '.ca', '.uk', '.ru', '.combjnkkklooo', 
     '.comty', '.comcom', '.comhmn', '.con', '.comm', '.comn', '.xon', '.comj',
-    '.comnb', '.comb', '.como', '.comx', '.coma', '.comf', '.cm', '.comk', '.comar',
+    '.comnb', '.comb', '.como', '.coma', '.comf', '.cm', '.comk', '.comar',
     '.om', '.cmo', '.cim', '.conm', '.conb', '.comz', '.commm', '.comhjm', '.comco',
     '.vom', '.comment', '.come', '.comy', '.comic', '.comTy', '.comg', '.comd', '.coma', 
     '.vn', '.comu'

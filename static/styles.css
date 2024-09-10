@@ -7,7 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     background: #7D799D;
-    background: radial-gradient(at center, #193BE1, #193BE1);
+    background: radial-gradient(at center, #090909, #0a0a0a);
     margin: 0;
     letter-spacing: 0px;
     color: #ffff;
@@ -15,7 +15,8 @@ body {
 
 .container {
     text-align: center;
-    background-image: linear-gradient(to bottom, #141414 40%, #0e0e0e 100%);
+    display: inline-block;
+    background-image: linear-gradient(to right, #582cf8, #6c2cf0, #7c2de8, #8830e1, #9233da);
     padding: 20px;         
     border-radius: 20px;
 }

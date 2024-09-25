@@ -55,7 +55,7 @@ input[type="file"], input[type="submit"], .form-check #selector {
 }
 
 input[type="submit"] {
-    background-color: #3A4FCA;
+    background-color: #252525;
     color: #fff;
     border: solid 0px;
     border-color: #0828c9;
@@ -101,7 +101,7 @@ p {
 }
 
 .boton-primary {
-    background-color: #3A4FCA;
+    background-color: #252525;
     color: #fff;
     border: solid 0px;
     border-color: #0828c9;
